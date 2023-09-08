@@ -38,5 +38,8 @@ const CalculateWinner = (squares) =>{
   return null;
 }
 
+const winner = computed(()=>CalculateWinner(board.value.flat())
+)
+
 
 </script>
