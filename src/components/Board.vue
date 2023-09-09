@@ -37,7 +37,7 @@ const CalculateWinner = (squares) =>{
   }
   return null;
 }
-
+//calculating winner
 const winner = computed(()=>CalculateWinner(board.value.flat())
 )
 
