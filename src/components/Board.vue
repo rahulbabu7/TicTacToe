@@ -81,7 +81,39 @@ board.value = [
   </h1>
 
   <h3 class="text-xl mb-4">Player {{ player }}'s turn</h3>
+<!-- 
 
+  Let's break this down step-by-step:
+
+1. The outer <div> renders a column flex container to center the content. 
+
+2. The v-for loop iterates through each row in the 'board' data variable. 
+
+3. It outputs a <div> for each row, using x as the key. The row <div> is a flex container.
+
+4. Inside each row, another v-for loops through each cell in that row array. 
+
+5. It outputs a <div> for each cell, using y as the key.
+
+6. The @click handler calls the makeMove() method when a cell is clicked, passing the x,y indexes.
+
+7. The :class binding dynamically assigns CSS classes to each cell <div> based on:
+
+   - Default styles for all cells  
+   - Added .text-pink-500 or .text-blue-500 class based on cell's value
+   - So X cells get pink text, O cells get blue text
+
+8. The template expression displays 'X', 'O', or blank for each cell based on its value.
+
+So in summary, we:
+
+- Loop through each row 
+- Inside that, loop through each cell
+- Output a <div> for each cell
+- Assign click handler and conditional styling
+- Display X, O or blank for each cell
+
+This allows us to generate the typical TicTacToe board dynamically in Vue. Let me know if any part is unclear! -->
   <div class="flex flex-col items-center mb-8">
 
     <div
